@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delicacy</title>
+
+    <!-- Website icon -->
+    <link rel="icon" href="images/weblogo.png" />
+    <!-- Cdn links -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS File Links -->
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="images/weblogo.png" />
+      </div>
+
+      <!-- Search Box -->
+      <div class="search-box">
+        <input type="text" placeholder="Search Products" />
+        <i class="fas fa-search"></i>
+      </div>
+
+      <!-- Desktop Links -->
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="promotions.html">Promotions</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <!-- Dropdowns -->
+      <div class="dropdown-container">
+        <!-- My Cart Dropdown -->
+        <div class="dropdown">
+          <div class="dropdown-toggle">
+            <i class="fas fa-shopping-cart"></i> My Cart
+            <i class="fas fa-chevron-down rotate-icon"></i>
+          </div>
+          <ul class="dropdown-menu">
+            <li><a href="/products">Product List</a></li>
+            <li><a href="/cart">View Cart</a></li>
+            <li><a href="/checkout">Checkout</a></li>
+          </ul>
+        </div>
+
+        <!-- Profile Dropdown -->
+        <div class="dropdown">
+          <div class="dropdown-toggle profile-toggle">
+            <img src="images/userprofile.jpg" class="profile-img" />
+            <span>User</span>
+            <i class="fas fa-chevron-down rotate-icon"></i>
+          </div>
+          <ul class="dropdown-menu">
+            <li><a href="/profile">Profile</a></li>
+            <li><a href="/profile/edit">Edit Profile</a></li>
+            <li><a href="/orders">My Orders</a></li>
+            <li><a href="/settings">Settings</a></li>
+            <li><a href="/signup">Sign Up</a></li>
+            <li><a href="/login">Login</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Hamburger Icon -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <!-- Mobile Slide Menu -->
+    <div class="mobile-slide-menu" id="mobileMenu">
+      <div class="search-container">
+        <input type="text" placeholder="Search Products" />
+        <i class="fas fa-search icon"></i>
+      </div>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="promotions.html">Promotions</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <!-- Header  -->
+    <section class="home swiper" id="home">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide container">
+          <div class="home-text" data-aos="fade-right">
+            <span>We are delicacy</span>
+            <h1>
+              Choose delicacy <br />
+              the best healthy <br />Way to life
+            </h1>
+            <a href="#" class="btn"
+              >Shop Now<i class="bx bx-right-arrow-alt"></i
+            ></a>
+          </div>
+          <img src="images/home1.png" data-aos="fade-down" />
+        </div>
+
+        <div class="swiper-slide container">
+          <div class="home-text">
+            <span>We are delicacy</span>
+            <h1>
+              Choose delicacy <br />
+              the best healthy <br />Way to life
+            </h1>
+
+            <a href="#" class="btn"
+              >Shop Now<i class="bx bx-right-arrow-alt"></i
+            ></a>
+          </div>
+          <img src="images/home2.png" />
+        </div>
+
+        <div class="swiper-slide container">
+          <div class="home-text">
+            <span>We are delicacy</span>
+            <h1>
+              Choose delicacy <br />
+              the best healthy <br />Way to life
+            </h1>
+
+            <a href="#" class="btn"
+              >Shop Now<i class="bx bx-right-arrow-alt"></i
+            ></a>
+          </div>
+          <img src="images/home3.png" />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </section>
+
+    <section class="categories-info">
+      <div class="categories-heading">
+        <h1 data-aos="fade-left">
+          Browse Our Hottest <br /><span>Categories</span>
+        </h1>
+        <a href="#" data-aos="fade-right" class="btn seeAll-btn"
+          >See All<i class="bx bx-right-arrow-alt"></i
+        ></a>
+      </div>
+    </section>
+
+    <!-- body section -->
+
+    <section class="categories-container">
+      <div class="box box1" data-aos="zoom-in">
+        <img src="images/cate1.png" />
+        <h2>Fruits</h2>
+        <span>22 Items</span>
+        <i class="bx bx-right-arrow-alt"></i>
+      </div>
+      <div class="box box2" data-aos="zoom-in">
+        <img src="images/cate2.png" />
+        <h2>Vegetables</h2>
+        <span>22 Items</span>
+        <i class="bx bx-right-arrow-alt"></i>
+      </div>
+      <div class="box box3" data-aos="zoom-in">
+        <img src="images/cate3.png" />
+        <h2>Drinks</h2>
+        <span>22 Items</span>
+        <i class="bx bx-right-arrow-alt"></i>
+      </div>
+      <div class="box box4" data-aos="zoom-in">
+        <img src="images/cate4.png" />
+        <h2>Fresh Nuts</h2>
+        <span>22 Items</span>
+        <i class="bx bx-right-arrow-alt"></i>
+      </div>
+      <div class="box box5" data-aos="zoom-in">
+        <img src="images/cate5.png" />
+        <h2>Spices</h2>
+        <span>22 Items</span>
+        <i class="bx bx-right-arrow-alt"></i>
+      </div>
+    </section>
+
+    <section class="product-section">
+      <div class="main-wrapper">
+        <div class="product-container">
+          <div class="product-card card-green" data-aos="zoom-in">
+            <div class="offer-box">
+              <h3>UPTO 20% OFF</h3>
+              <p>
+                Collected <br />
+                From <br />
+                Gardens
+              </p>
+              <button><a href="#" class="see-allLink">See All</a></button>
+            </div>
+            <img src="images/c1.png" alt="Collected From Gardens" />
+          </div>
+
+          <div class="product-card card-lightgreen" data-aos="zoom-in">
+            <div class="offer-box">
+              <h3>UPTO 20% OFF</h3>
+              <p>
+                Change <br />
+                Your <br />
+                Diet Plan
+              </p>
+              <button><a href="#" class="see-allLink">See All</a></button>
+            </div>
+            <img src="images/c2.png" alt="Change Your Diet Plan" />
+          </div>
+
+          <div class="product-card card-orange" data-aos="zoom-in">
+            <div class="offer-box">
+              <h3>NATURAL FRESH</h3>
+              <p>
+                Vegetable <br />
+                100% <br />
+                Organic
+              </p>
+              <button><a href="#" class="see-allLink">See All</a></button>
+            </div>
+            <img src="images/c3.png" alt="Vegetable 100% Organic" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <img data-aos="fade-right" src="images/about.png" />
+      <div class="about-text" data-aos="fade-right">
+        <span>About Us</span>
+        <h1>
+          We Believe In Working With <br />
+          Accredited Farmers
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dicta
+          pariatur repellendus illo provident omnis quo eaque dolor quod
+          reprehenderit ut porro exercitationem, similique est at labore
+          impedit, in recusandae.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
+          blanditiis delectus.
+        </p>
+        <a href="#" class="btn seeAll-btn"
+          >Learn More<i class="bx bx-right-arrow-alt"></i
+        ></a>
+      </div>
+    </section>
+
+    <section class="main-bdSection">
+      <section class="bd-section">
+        <h1>Most Popular <span>Products</span></h1>
+        <div class="bd-dt1" id="bd-dt1">
+          <button type="button" class="link-active">All</button>
+          <button type="button">Vegetables</button>
+          <button type="button">Meat</button>
+          <button type="button">Drinks</button>
+        </div>
+
+        <section class="product-section2" id="product-list">
+          <div
+            class="product-box"
+            data-category="vegetables"
+            data-aos="zoom-out-up"
+          >
+            <img src="images/1741330846864.png" />
+            <span>Vegetables</span>
+            <h2>Farm fresh organic vegetables 250g</h2>
+            <h3 class="price">$20 <span>/kg</span></h3>
+            <i class="bx bx-cart-alt"></i>
+            <i class="bx bx-heart"></i>
+            <span class="discount">-25%</span>
+          </div>
+
+          <div class="product-box" data-category="meat" data-aos="zoom-out-up">
+            <img
+              src="images/png-clipart-red-meat-food-meat-packing-industry-meat-food-beef.png"
+            />
+            <span>Meat</span>
+            <h2>Farm fresh organic meat 1kg</h2>
+            <h3 class="price">$11 <span>/kg</span></h3>
+            <i class="bx bx-cart-alt"></i>
+            <i class="bx bx-heart"></i>
+            <span class="discount">-25%</span>
+          </div>
+
+          <div
+            class="product-box"
+            data-category="vegetables"
+            data-aos="zoom-out-up"
+          >
+            <img src="images/carrot.png" />
+            <span>Vegetables</span>
+            <h2>Farm fresh organic vegetables 500g</h2>
+            <h3 class="price">$11 <span>/kg</span></h3>
+            <i class="bx bx-cart-alt"></i>
+            <i class="bx bx-heart"></i>
+            <span class="discount">-25%</span>
+          </div>
+
+          <div
+            class="product-box"
+            data-category="fruits"
+            data-aos="zoom-out-up"
+          >
+            <img src="images/DeWatermark.ai_1741331498813 (1).png" />
+            <span>Fruits</span>
+            <h2>Farm fresh organic orange 500g</h2>
+            <h3 class="price">$8 <span>/kg</span></h3>
+            <i class="bx bx-cart-alt"></i>
+            <i class="bx bx-heart"></i>
+            <span class="discount">-25%</span>
+          </div>
+
+          <div
+            class="product-box"
+            data-category="drinks"
+            data-aos="zoom-out-up"
+          >
+            <img src="images/d16b7a2553252183b8f49aaa2336fca0.png" />
+            <span>Drinks</span>
+            <h2>Farm fresh organic natural soft drink</h2>
+            <h3 class="price">$8 <span>/kg</span></h3>
+            <i class="bx bx-cart-alt"></i>
+            <i class="bx bx-heart"></i>
+            <span class="discount">-25%</span>
+          </div>
+
+          <div class="product-box" data-category="meat" data-aos="zoom-out-up">
+            <img src="images/meat.png" />
+            <span>Meat</span>
+            <h2>Farm fresh organic meat 1kg</h2>
+            <h3 class="price">$11 <span>/kg</span></h3>
+            <i class="bx bx-cart-alt"></i>
+            <i class="bx bx-heart"></i>
+            <span class="discount">-25%</span>
+          </div>
+
+          <div
+            class="product-box"
+            data-category="drinks"
+            data-aos="zoom-out-up"
+          >
+            <img
+              src="images/360_F_548725440_OxJm40zPJ5dO2DvrxTSBPMbaaBZaDD4F.png"
+            />
+            <span>Drinks</span>
+            <h2>Farm fresh natural organic drink.</h2>
+            <h3 class="price">$5 <span>/kg</span></h3>
+            <i class="bx bx-cart-alt"></i>
+            <i class="bx bx-heart"></i>
+            <span class="discount">-25%</span>
+          </div>
+
+          <div
+            class="product-box"
+            data-category="fruits"
+            data-aos="zoom-out-up"
+          >
+            <img
+              src="images/icon-512-512-true-57e46b246eea8d7a6e76d9eef363556e.png"
+            />
+            <span>Fruits</span>
+            <h2>Farm fresh natural organic fruits 250g</h2>
+            <h3 class="price">$7 <span>/kg</span></h3>
+            <i class="bx bx-cart-alt"></i>
+            <i class="bx bx-heart"></i>
+            <span class="discount">-25%</span>
+          </div>
+        </section>
+      </section>
+      <section class="stats">
+        <div class="stat-item">
+          <i class="fas fa-users"></i>
+          <div class="item-info">
+            <h2>
+              <span class="counter" data-target="1800">0</span
+              ><span class="item-plus">+</span>
+            </h2>
+            <p>Satisfied Clients</p>
+          </div>
+        </div>
+        <div class="stat-item">
+          <i class="fas fa-box-open"></i>
+          <div class="item-info">
+            <h2>
+              <span class="counter" data-target="362">0</span
+              ><span class="item-plus">+</span>
+            </h2>
+            <p>Active Products</p>
+          </div>
+        </div>
+        <div class="stat-item">
+          <i class="fas fa-utensils"></i>
+          <div class="item-info">
+            <h2>
+              <span class="counter" data-target="4">0</span
+              ><span class="item-plus">+</span>
+            </h2>
+            <p>Food Categories</p>
+          </div>
+        </div>
+        <div class="stat-item">
+          <i class="fas fa-award"></i>
+          <div class="item-info">
+            <h2>
+              <span class="counter" data-target="100">0</span
+              ><span class="item-plus">+</span>
+            </h2>
+            <p>Awards Winning</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="customers" id="customers">
+        <h2>Why Customers <span>Love Us?</span></h2>
+
+        <div class="customers-container">
+          <div class="box" data-aos="fade-up">
+            <i class="bx bxs-quote-alt-left"></i>
+            <div class="stars">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star-half"></i>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+              id doloribus obcaecati magni dignissimos nulla odio.
+            </p>
+            <div class="review-profile">
+              <img src="images/c1.jpg" alt="Customer 1" />
+              <h3>Sarah Johnson</h3>
+            </div>
+          </div>
+
+          <div class="box" data-aos="fade-up">
+            <i class="bx bxs-quote-alt-left"></i>
+            <div class="stars">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star-half"></i>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+              id doloribus obcaecati magni dignissimos nulla odio.
+            </p>
+            <div class="review-profile">
+              <img src="images/c2.jpg" alt="Customer 2" />
+              <h3>Michele Smith</h3>
+            </div>
+          </div>
+
+          <div class="box" data-aos="fade-up">
+            <i class="bx bxs-quote-alt-left"></i>
+            <div class="stars">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star-half"></i>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+              id doloribus obcaecati magni dignissimos nulla odio.
+            </p>
+            <div class="review-profile">
+              <img src="images/c3.jpg" alt="Customer 3" />
+              <h3>Emily Brown</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="banner-section">
+        <div class="banner">
+          <div class="content" data-aos="fade-right">
+            <h2>Download Delicacy Mobile App</h2>
+            <p>
+              This plugin is amazing with the current version, imagine 4,<br />
+              how cool will it be when you finish that all.
+            </p>
+
+            <div class="appbuttons">
+              <a href="#" class="appbtn appstore">
+                <img src="svg/appstore.svg" alt="App Store" />
+              </a>
+              <a href="#" class="appbtn googleplay">
+                <img src="svg/googleplay.svg" alt="Google Play" />
+              </a>
+            </div>
+          </div>
+
+          <div class="image">
+            <img
+              src="images/mobileAppimage.png"
+              alt="Mobile App"
+              data-aos="fade-up"
+            />
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Footer -->
+
+    <footer
+      class="footer"
+      id="footer"
+      data-aos="fade-up"
+      data-aos-easing="ease-in-out"
+      data-aos-duration="1200"
+    >
+      <div class="footer-box">
+        <img src="images/weblogo.png" class="ft-img" alt="Delicacy Logo" />
+        <p>GymVast, 50th Street, 4th <br />Floor, NYC 10022</p>
+
+        <div class="social">
+          <a href="#"><i class="bx bxl-facebook"></i></a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+          <a href="#"><i class="bx bxl-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-box">
+        <h2>Categories</h2>
+        <a href="#">Fruits & Vegetables</a>
+        <a href="#">Dairy Products</a>
+        <a href="#">Packaged Food</a>
+        <a href="#">Beverage</a>
+      </div>
+
+      <div class="footer-box">
+        <h2>Useful Links</h2>
+        <a href="#">Payment & Tax</a>
+        <a href="#">Terms Of Use</a>
+        <a href="#">My Blog</a>
+        <a href="#">Return Policy</a>
+      </div>
+
+      <div class="footer-box">
+        <h2>Newsletter</h2>
+        <p class="footer-text">Get 10% Discount with <br />Email Newsletter</p>
+
+        <form action="#" method="post">
+          <i class="bx bxs-envelope"></i>
+          <input
+            type="email"
+            name="email"
+            autocomplete="off"
+            placeholder="Enter Your Email"
+            required
+          />
+          <i class="bx bx-arrow-back bx-rotate-180" id="sendEmailIcon"></i>
+        </form>
+      </div>
+    </footer>
+
+    <section class="footer-last-section">
+      <div class="copyright">
+        <p>&#169;2025 Delicacy Store</p>
+      </div>
+
+      <div class="footer-last-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Refund Policy</a>
+      </div>
+      <div class="payments-sections">
+        <a href="#"><img src="images/paypal.png" alt="" /></a>
+        <a href="#"><img src="images/Visa_paymentIcon.jpg" id="visa-card" /></a>
+        <a href="#"><img src="images/mastercard.png" alt="" /></a>
+      </div>
+    </section>
+
+    <!-- scirpt cdn links -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- Link to script.js file  -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
