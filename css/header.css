@@ -111,7 +111,8 @@ html {
 }
 
 /*Responsive Header */
-@media screen and (max-width: 1024px) {
+
+@media screen and (max-width: 1240px) {
   .container {
     flex-direction: column;
     text-align: center;
