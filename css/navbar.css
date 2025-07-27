@@ -253,6 +253,22 @@ html {
   }
 }
 
+/* Responsive */
+
+@media (max-width: 1090px) {
+  .nav-links {
+    display: none;
+  }
+
+  .search-container {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
 @media (max-width: 480px) {
   .search-container input {
     font-size: 14px;
@@ -282,20 +298,5 @@ html {
 
   .search-container {
     display: block !important;
-  }
-}
-
-/* Responsive */
-@media (max-width: 1090px) {
-  .nav-links {
-    display: none;
-  }
-
-  .search-container {
-    display: none;
-  }
-
-  .hamburger {
-    display: flex;
   }
 }
