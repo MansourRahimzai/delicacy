@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delicacy - Promotions</title>
+    <!-- Website icon -->
+    <link rel="icon" href="images/weblogo.png" />
+    <!-- Cdn links -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS File Links -->
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/promotions.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="images/weblogo.png" />
+      </div>
+
+      <!-- Search Box -->
+      <div class="search-box">
+        <input type="text" placeholder="Search Products" />
+        <i class="fas fa-search"></i>
+      </div>
+
+      <!-- Desktop Links -->
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="promotions.html">Promotions</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <!-- Dropdowns -->
+      <div class="dropdown-container">
+        <!-- My Cart Dropdown -->
+        <div class="dropdown">
+          <div class="dropdown-toggle">
+            <i class="fas fa-shopping-cart"></i> My Cart
+            <i class="fas fa-chevron-down rotate-icon"></i>
+          </div>
+          <ul class="dropdown-menu">
+            <li><a href="/products">Product List</a></li>
+            <li><a href="/cart">View Cart</a></li>
+            <li><a href="/checkout">Checkout</a></li>
+          </ul>
+        </div>
+
+        <!-- Profile Dropdown -->
+        <div class="dropdown">
+          <div class="dropdown-toggle profile-toggle">
+            <img src="images/userprofile.jpg" class="profile-img" />
+            <span>User</span>
+            <i class="fas fa-chevron-down rotate-icon"></i>
+          </div>
+          <ul class="dropdown-menu">
+            <li><a href="/profile">Profile</a></li>
+            <li><a href="/profile/edit">Edit Profile</a></li>
+            <li><a href="/orders">My Orders</a></li>
+            <li><a href="/settings">Settings</a></li>
+            <li><a href="/signup">Sign Up</a></li>
+            <li><a href="/login">Login</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Hamburger Icon -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <!-- Mobile Slide Menu -->
+    <div class="mobile-slide-menu" id="mobileMenu">
+      <div class="search-container">
+        <input type="text" placeholder="Search Products" />
+        <i class="fas fa-search icon"></i>
+      </div>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="promotions.html">Promotions</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <!-- Header -->
+    <section class="home swiper" id="home">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide container">
+          <div class="home-text" data-aos="fade-right">
+            <span>We are delicacy</span>
+            <h1>
+              Choose delicacy <br />
+              the best healthy <br />Way to life
+            </h1>
+            <a href="#" class="btn"
+              >Shop Now<i class="bx bx-right-arrow-alt"></i
+            ></a>
+          </div>
+          <img src="images/home1.png" data-aos="fade-down" />
+        </div>
+
+        <div class="swiper-slide container">
+          <div class="home-text">
+            <span>We are delicacy</span>
+            <h1>
+              Choose delicacy <br />
+              the best healthy <br />Way to life
+            </h1>
+
+            <a href="#" class="btn"
+              >Shop Now<i class="bx bx-right-arrow-alt"></i
+            ></a>
+          </div>
+          <img src="images/home2.png" />
+        </div>
+
+        <div class="swiper-slide container">
+          <div class="home-text">
+            <span>We are delicacy</span>
+            <h1>
+              Choose delicacy <br />
+              the best healthy <br />Way to life
+            </h1>
+
+            <a href="#" class="btn"
+              >Shop Now<i class="bx bx-right-arrow-alt"></i
+            ></a>
+          </div>
+          <img src="images/home3.png" />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </section>
+
+    <!-- promotions section -->
+    <section class="promo-wrapper">
+      <div class="promo-section">
+        <h2 class="promo-title" data-aos="fade-down">
+          Limited Time <span class="promotions-highlight">Deals</span>
+        </h2>
+
+        <div class="promo-grid">
+          <!-- Card 1 -->
+          <div class="promo-card" data-aos="fade-up" data-aos-delay="100">
+            <img src="images/promotions-image/pp1.png" />
+            <h4>50% Off on Fresh Meat</h4>
+            <p>Get the best quality meat at half price this week only!</p>
+            <a href="#" class="btn">Shop Now</a>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="promo-card" data-aos="fade-up" data-aos-delay="200">
+            <img src="images/promotions-image/pp2.png" alt="Deal 2" />
+            <h4>Buy 1 Get 1 Free - Veggies</h4>
+            <p>Healthy vegetables with amazing offers for your family.</p>
+            <a href="#" class="btn">Order Today</a>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="promo-card" data-aos="fade-up" data-aos-delay="300">
+            <img src="images/promotions-image/pp3.png" alt="Deal 3" />
+            <h4>Drinks Combo Offer</h4>
+            <p>Get your favorite drinks at a combo price. Hurry!</p>
+            <a href="#" class="btn">Grab Deal</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ✨ Why Shop Promotions With Us Section -->
+    <section class="why-promos-section" data-aos="fade-up">
+      <div class="why-promos-container">
+        <!-- Text Content -->
+        <div class="why-promos-text" data-aos="fade-right">
+          <h2>
+            Why Shop <span class="promotions-highlight">Promotions</span> With
+            Us?
+          </h2>
+          <p>
+            At Delicacy, promotions are more than discounts — they’re our way of
+            giving back to our valued customers. Each offer is carefully picked
+            to bring you the freshest, highest-quality products at unbeatable
+            prices. Don’t just shop — shop smart, shop with joy!
+          </p>
+        </div>
+
+        <!-- Image Content -->
+        <div class="why-promos-image" data-aos="fade-left">
+          <img
+            src="images/promotions-image/promotions-image.png"
+            alt="Why Promotions"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer
+      class="footer"
+      id="footer"
+      data-aos="fade-up"
+      data-aos-easing="ease-in-out"
+      data-aos-duration="1200"
+    >
+      <div class="footer-box">
+        <img src="images/weblogo.png" class="ft-img" alt="Delicacy Logo" />
+        <p>GymVast, 50th Street, 4th <br />Floor, NYC 10022</p>
+
+        <div class="social">
+          <a href="#"><i class="bx bxl-facebook"></i></a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+          <a href="#"><i class="bx bxl-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-box">
+        <h2>Categories</h2>
+        <a href="#">Fruits & Vegetables</a>
+        <a href="#">Dairy Products</a>
+        <a href="#">Packaged Food</a>
+        <a href="#">Beverage</a>
+      </div>
+
+      <div class="footer-box">
+        <h2>Useful Links</h2>
+        <a href="#">Payment & Tax</a>
+        <a href="#">Terms Of Use</a>
+        <a href="#">My Blog</a>
+        <a href="#">Return Policy</a>
+      </div>
+
+      <div class="footer-box">
+        <h2>Newsletter</h2>
+        <p class="footer-text">Get 10% Discount with <br />Email Newsletter</p>
+
+        <form action="#" method="post">
+          <i class="bx bxs-envelope"></i>
+          <input
+            type="email"
+            name="email"
+            autocomplete="off"
+            placeholder="Enter Your Email"
+            required
+          />
+          <i class="bx bx-arrow-back bx-rotate-180" id="sendEmailIcon"></i>
+        </form>
+      </div>
+    </footer>
+
+    <section class="footer-last-section">
+      <div class="copyright">
+        <p>&#169;2025 Delicacy Store</p>
+      </div>
+
+      <div class="footer-last-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Refund Policy</a>
+      </div>
+      <div class="payments-sections">
+        <a href="#"><img src="images/paypal.png" alt="" /></a>
+        <a href="#"><img src="images/Visa_paymentIcon.jpg" id="visa-card" /></a>
+        <a href="#"><img src="images/mastercard.png" alt="" /></a>
+      </div>
+    </section>
+
+    <!-- Js Cdn links -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- Js files link -->
+    <script src="js/promotions.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

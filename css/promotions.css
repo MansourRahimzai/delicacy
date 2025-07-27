@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lora", serif;
+}
+.promo-wrapper {
+  font-family: "Poppins", sans-serif;
+  padding: 60px 20px;
+  background-color: #f3f3f3;
+  color: #333;
+  margin-top: 3.5rem;
+}
+
+.promo-section {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.promo-title {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.promo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.promo-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.promo-card:hover {
+  transform: translateY(-8px);
+}
+
+.promo-card img {
+  max-width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.promo-card h4 {
+  margin-top: 15px;
+  font-size: 20px;
+  color: #444;
+}
+
+.promotions-highlight {
+  color: #3cb815;
+}
+
+.promo-card p {
+  font-size: 14px;
+  color: #777;
+  margin: 10px 0;
+}
+
+.promo-card .btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #f76b1c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background-color: #e35d0f;
+}
+
+.limited-time-offer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.limited-title {
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .promo-title {
+    font-size: 28px;
+  }
+}
+
+/* 🌟 Why Shop Promotions With Us Section Styles */
+.why-promos-section {
+  padding: 80px 20px;
+  background-color: #fefefe;
+}
+
+.why-promos-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.why-promos-text {
+  flex: 1 1 450px;
+  text-align: left;
+}
+
+.why-promos-text h2 {
+  font-size: 32px;
+  color: #333;
+  padding-bottom: 10px;
+}
+
+.why-promos-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #666;
+  text-align: justify;
+}
+
+.why-promos-image {
+  flex: 1 1 450px;
+  text-align: center;
+}
+
+.why-promos-image img {
+  width: 350px;
+  height: 350px;
+  height: auto;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.why-promos-image img:hover {
+  transform: scale(1.03);
+}
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+  .why-promos-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .why-promos-text h2 {
+    font-size: 26px;
+  }
+
+  .why-promos-text p {
+    font-size: 16px;
+  }
+}
