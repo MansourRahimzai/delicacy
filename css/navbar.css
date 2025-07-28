@@ -138,7 +138,7 @@ html {
 }
 
 .hamburger span {
-  width: 26px;
+  width: 24px;
   height: 2.3px;
   background-color: #333;
   border-radius: 2px;
@@ -154,7 +154,7 @@ html {
 }
 
 .hamburger.open span:nth-child(3) {
-  transform: rotate(-45deg) translateY(-10px);
+  transform: rotate(-45deg) translateY(-8px);
 }
 
 /* Mobile Slide Menu */
