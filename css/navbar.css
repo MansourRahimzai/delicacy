@@ -154,7 +154,7 @@ html {
 }
 
 .hamburger.open span:nth-child(3) {
-  transform: rotate(-45deg) translateY(-8px);
+  transform: rotate(-45deg) translateY(-10px);
 }
 
 /* Mobile Slide Menu */
