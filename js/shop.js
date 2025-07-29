@@ -11,7 +11,6 @@ nextBtn.addEventListener("click", () => {
   });
 });
 
-// Slide prev
 prevBtn.addEventListener("click", () => {
   carousel.scrollBy({
     left: -carousel.offsetWidth,
@@ -35,6 +34,12 @@ filterButtons.forEach((btn) => {
       } else {
         product.style.display = "none";
       }
+    });
+
+    // Reset carousel scroll to start
+    carousel.scrollTo({
+      left: 0,
+      behavior: "smooth",
     });
   });
 });
