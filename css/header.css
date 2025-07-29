@@ -27,7 +27,7 @@ html {
   position: relative;
   width: 100%;
   min-height: 540px;
-  background: url("..//images/background.png");
+  background: url("..//images/background.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
