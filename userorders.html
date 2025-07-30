@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Orders</title>
+
+    <!-- Cdn links -->
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/userorders.css">
+  <body>
+    <header class="navbar">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="images/weblogo.png" />
+      </div>
+
+      <!-- Search Box -->
+      <div class="search-box">
+        <input type="text" placeholder="Search Products" />
+        <i class="fas fa-search"></i>
+      </div>
+
+      <!-- Desktop Links -->
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="promotions.html">Promotions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <!-- Dropdowns -->
+      <div class="dropdown-container">
+        <!-- My Cart Dropdown -->
+        <div class="dropdown">
+          <div class="dropdown-toggle my-cart">
+            <i class="fas fa-shopping-cart"></i> My Cart
+            <i class="fas fa-chevron-down rotate-icon"></i>
+          </div>
+          <ul class="dropdown-menu">
+            <li><a href="/products">Product List</a></li>
+            <li><a href="/cart">View Cart</a></li>
+            <li><a href="/checkout">Checkout</a></li>
+          </ul>
+        </div>
+
+        <!-- Profile Dropdown -->
+        <div class="dropdown">
+          <div class="dropdown-toggle profile-toggle">
+            <img src="images/userprofile.jpg" class="profile-img" />
+            <span>User</span>
+            <i class="fas fa-chevron-down rotate-icon"></i>
+          </div>
+          <ul class="dropdown-menu">
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="userorders.html">My Orders</a></li>
+            <li><a href="/settings">Settings</a></li>
+            <li><a href="/signup">Sign Up</a></li>
+            <li><a href="/login">Login</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Hamburger Icon -->
+      <div class="menu-icon">
+        <input class="menu-icon__cheeckbox" id="hamburger" type="checkbox" />
+        <div>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Slide Menu -->
+    <div class="mobile-slide-menu" id="mobileMenu">
+      <div class="search-container">
+        <input type="text" placeholder="Search Products" />
+        <i class="fas fa-search icon"></i>
+      </div>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="promotions.html">Promotions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="orders-container">
+      <h2 class="orders-title">My Orders</h2>
+
+      <!-- Search & Filter -->
+      <div class="orders-filters">
+        <input
+          type="text"
+          placeholder="Search by Order ID"
+          id="searchInput"
+        />
+        <select id="statusFilter">
+          <option value="">All Statuses</option>
+          <option value="processing">Processing</option>
+          <option value="shipped">Shipped</option>
+          <option value="delivered">Delivered</option>
+        </select>
+      </div>
+
+      <!-- Orders List -->
+      <div id="ordersList" class="orders-list"></div>
+
+      <!-- Load More -->
+      <button id="loadMoreBtn">Load More</button>
+    </div>
+
+    <!-- Order Details Modal -->
+    <div id="orderModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Order Details</h3>
+        <p><strong>Order ID:</strong> #123456</p>
+        <p><strong>Items:</strong> 3</p>
+        <p><strong>Total:</strong> $42.99</p>
+        <p><strong>Status:</strong> Delivered</p>
+        <button class="print-btn">Print Invoice</button>
+      </div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/userorders.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
