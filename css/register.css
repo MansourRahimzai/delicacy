@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --white: #ffffff;
+  --orange: #fe7d06;
+  --light: #dff6ff;
+  --text: #333333;
+  --muted: #666666;
+  --radius: 16px;
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 40px;
+  max-width: 420px;
+  width: 100%;
+}
+
+.card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--orange);
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: var(--radius);
+  font-size: 14px;
+}
+
+.btn {
+  width: 100%;
+  background: var(--orange);
+  color: var(--white);
+  border: none;
+  padding: 14px;
+  border-radius: var(--radius);
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #e56f05;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+  color: var(--muted);
+}
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+}
+.divider:not(:empty)::before {
+  margin-right: 10px;
+}
+.divider:not(:empty)::after {
+  margin-left: 10px;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px;
+  border-radius: var(--radius);
+  border: 1px solid #ddd;
+  background: var(--white);
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: background 0.3s;
+  text-decoration: none;
+  color: #000;
+}
+
+.social-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.rg-signup p {
+  padding: 10px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.rg-signup a {
+  text-decoration: none;
+}
