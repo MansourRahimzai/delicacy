@@ -1,9 +1,3 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 :root {
   --white: #ffffff;
   --orange: #fe7d06;
@@ -113,21 +107,24 @@ body {
   color: #000;
 }
 
+.social-btn:hover {
+  background: var(--light);
+}
+
 .social-btn img {
   width: 20px;
   height: 20px;
 }
 
-.rg-signup p {
+.extra-links {
+  margin-top: 15px;
   text-align: center;
-  padding-top: 10px;
+  font-size: 14px;
 }
-
-.rg-signup a {
+.extra-links a {
+  color: var(--orange);
   text-decoration: none;
-  color: #fe7d06;
 }
-
-.rg-signup a:hover {
+.extra-links a:hover {
   text-decoration: underline;
 }
