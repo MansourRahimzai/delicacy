@@ -24,7 +24,6 @@ body {
 .card {
   background: var(--white);
   border-radius: var(--radius);
-  box-shadow: var(--shadow);
   padding: 40px;
   max-width: 420px;
   width: 100%;
