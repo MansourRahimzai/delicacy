@@ -38,7 +38,7 @@ body {
 .card h2 {
   text-align: center;
   margin-bottom: 20px;
-  color: var(--orange);
+  color: #000;
 }
 
 .input-group {
@@ -58,6 +58,61 @@ body {
   border: 1px solid #ddd;
   border-radius: var(--radius);
   font-size: 14px;
+}
+
+input[type="file"] {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+input[type="file"]::file-selector-button {
+  width: 136px;
+  color: transparent;
+}
+
+/* Faked label styles and icon */
+input[type="file"]::before {
+  position: absolute;
+  pointer-events: none;
+  top: 10px;
+  left: 16px;
+  height: 20px;
+  width: 20px;
+  content: "";
+}
+
+input[type="file"]::after {
+  position: absolute;
+  pointer-events: none;
+  top: 11px;
+  left: 40px;
+  color: #fe7d06;
+  content: "Profile image";
+}
+
+/* ------- From Step 1 ------- */
+
+/* file upload button */
+input[type="file"]::file-selector-button {
+  border-radius: 4px;
+  padding: 0 16px;
+  height: 40px;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+  margin-right: 16px;
+  transition: background-color 200ms;
+}
+
+/* file upload button hover state */
+input[type="file"]::file-selector-button:hover {
+  background-color: #f3f4f6;
+}
+
+/* file upload button active state */
+input[type="file"]::file-selector-button:active {
+  background-color: #e5e7eb;
 }
 
 .btn {
@@ -99,7 +154,7 @@ body {
 .social-btn {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 13px;
   width: 100%;
   padding: 12px;
   border-radius: var(--radius);
@@ -129,4 +184,208 @@ body {
 
 .rg-signup a:hover {
   text-decoration: underline;
+}
+
+/* Check Your email css design */
+.email-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 40px 30px;
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+}
+
+.email-card img {
+  width: 90px;
+  margin-bottom: 20px;
+}
+
+.email-card h2 {
+  color: var(--orange);
+  margin-bottom: 10px;
+}
+
+.email-card p {
+  color: var(--muted);
+  margin-bottom: 25px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.verify-btn {
+  padding: 14px;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--orange);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+  max-width: 260px;
+}
+
+.verify-btn:hover {
+  background: #e56f05;
+}
+
+.resend {
+  margin-top: 20px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.resend a {
+  color: var(--orange);
+  text-decoration: none;
+}
+
+.resend a:hover {
+  text-decoration: underline;
+}
+
+/* Verify Signup */
+
+.otp-box {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 40px 30px;
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+}
+
+.otp-box img {
+  width: 85px;
+  margin-bottom: 20px;
+}
+
+.otp-box h2 {
+  color: var(--orange);
+  margin-bottom: 12px;
+}
+
+.otp-box p {
+  color: var(--muted);
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+.otp-inputs {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.otp-inputs input {
+  width: 50px;
+  height: 55px;
+  border-radius: var(--radius);
+  border: 2px solid #ddd;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  transition: border 0.3s;
+}
+
+.otp-inputs input:focus {
+  border-color: var(--orange);
+  outline: none;
+}
+
+.verify-btn {
+  padding: 14px;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--orange);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+  max-width: 260px;
+}
+
+.verify-btn:hover {
+  background: #e56f05;
+}
+
+.resend {
+  margin-top: 20px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.resend a {
+  color: var(--orange);
+  text-decoration: none;
+}
+
+.resend a:hover {
+  text-decoration: underline;
+}
+
+/* account verfied css design */
+.verified-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 50px 35px;
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.verified-card img {
+  width: 100px;
+  margin-bottom: 25px;
+}
+
+.verified-card h2 {
+  color: var(--orange);
+  margin-bottom: 12px;
+  font-size: 26px;
+}
+
+.verified-card p {
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.login-btn {
+  padding: 16px;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--orange);
+  color: var(--white);
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+  max-width: 280px;
+}
+
+.login-btn:hover {
+  background: #e56f05;
 }

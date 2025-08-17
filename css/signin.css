@@ -32,7 +32,7 @@ body {
 .card h2 {
   text-align: center;
   margin-bottom: 20px;
-  color: var(--orange);
+  color: #000;
 }
 
 .input-group {
@@ -93,7 +93,7 @@ body {
 .social-btn {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 13px;
   width: 100%;
   padding: 12px;
   border-radius: var(--radius);
@@ -121,5 +121,182 @@ body {
   text-decoration: none;
 }
 .extra-links a:hover {
+  text-decoration: underline;
+}
+
+/* Forgot password Css */
+
+.reset-form {
+  text-align: center;
+}
+
+.reset-title {
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.reset-info {
+  padding-bottom: 25px;
+  text-align: center;
+  color: #666666;
+}
+
+.login-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.continue {
+  margin-top: 10px;
+}
+
+/* Verify code form design */
+.otp-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 40px 30px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.otp-card h2 {
+  color: var(--orange);
+  margin-bottom: 10px;
+}
+
+.otp-card p {
+  color: var(--muted);
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+.otp-inputs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.otp-inputs input {
+  width: 48px;
+  height: 56px;
+  border: 1px solid #ddd;
+  border-radius: var(--radius);
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--text);
+  outline: none;
+  transition: border 0.3s, background 0.3s;
+}
+
+.otp-inputs input:focus {
+  border-color: var(--orange);
+  background: #fff9f3;
+}
+
+.otp-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--orange);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.otp-btn:hover {
+  background: #e56f05;
+}
+
+.otp-extra {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.otp-extra a {
+  color: var(--orange);
+  text-decoration: none;
+}
+
+.otp-extra a:hover {
+  text-decoration: underline;
+}
+
+/* Reset Password Form design*/
+
+.reset-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 40px 30px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.reset-card h2 {
+  color: var(--orange);
+  margin-bottom: 10px;
+}
+
+.reset-card p {
+  color: var(--muted);
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+.reset-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.reset-form input {
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: var(--radius);
+  font-size: 15px;
+  color: var(--text);
+  outline: none;
+  transition: border 0.3s, background 0.3s;
+}
+
+.reset-form input:focus {
+  border-color: var(--orange);
+  background: #fff9f3;
+}
+
+.reset-btn {
+  padding: 14px;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--orange);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.reset-btn:hover {
+  background: #e56f05;
+}
+
+.reset-extra {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.reset-extra a {
+  color: var(--orange);
+  text-decoration: none;
+}
+
+.reset-extra a:hover {
   text-decoration: underline;
 }
