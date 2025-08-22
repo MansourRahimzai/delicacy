@@ -1,0 +1,203 @@
+:root {
+  --white: #ffffff;
+  --orange: #fe7d06;
+  --light: #f9fbff;
+  --text: #333333;
+  --muted: #777777;
+  --radius: 14px;
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+  background: var(--light);
+  color: var(--text);
+}
+
+/* Header */
+.cartTopBar {
+  background: var(--orange);
+  color: var(--white);
+  padding: 18px 20px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Container */
+.cartContainer {
+  max-width: 1100px;
+  margin: 7rem auto;
+  padding: 0 16px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+}
+
+/* Cart List */
+.cartBox {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.cartHeadBox {
+  padding: 18px 20px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cartItemsBox {
+  padding: 10px;
+}
+.cartRowBox {
+  display: grid;
+  grid-template-columns: 90px 1fr 130px 110px 28px;
+  gap: 14px;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.cartRowBox:last-child {
+  border-bottom: none;
+}
+.itemThumbBox {
+  width: 90px;
+  height: 70px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fafafa;
+}
+.itemThumbBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.itemTitleBox {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.itemMetaBox {
+  color: var(--muted);
+  font-size: 13px;
+}
+.itemPriceBox {
+  font-weight: 700;
+  color: var(--orange);
+}
+.itemQtyBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  padding: 4px 8px;
+}
+.itemQtyBox button {
+  border: none;
+  background: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: var(--orange);
+  font-weight: bold;
+}
+.itemQtyBox input {
+  width: 40px;
+  border: none;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+}
+.removeBtnBox {
+  color: #ff4444;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Summary */
+.summaryBox {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 24px;
+  height: fit-content;
+}
+.summaryTitleBox {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+.summaryRowBox {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: var(--muted);
+}
+.summaryTotalBox {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 17px;
+  border-top: 1px solid #eee;
+  padding-top: 12px;
+  margin-top: 12px;
+  color: var(--text);
+}
+.couponBox {
+  margin: 16px 0;
+  display: flex;
+  gap: 8px;
+}
+.couponBox input {
+  flex: 1;
+  padding: 10px;
+  border-radius: var(--radius);
+  border: 1px solid #ddd;
+}
+.couponBox button {
+  background: var(--orange);
+  color: var(--white);
+  border: none;
+  padding: 10px 16px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-weight: 600;
+}
+.couponMsg {
+  font-size: 13px;
+  margin-top: 6px;
+}
+.couponMsg.success {
+  color: green;
+}
+.couponMsg.error {
+  color: red;
+}
+.checkoutBtnBox {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--orange);
+  color: var(--white);
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 15px;
+}
+.checkoutBtnBox:hover {
+  background: #e56f05;
+}
+
+/* Responsive */
+@media (max-width: 820px) {
+  .cartContainer {
+    grid-template-columns: 1fr;
+  }
+  .cartRowBox {
+    grid-template-columns: 70px 1fr 80px 80px 28px;
+  }
+}

@@ -62,6 +62,11 @@ html {
   gap: 25px;
 }
 
+.mycart-link {
+  text-decoration: none;
+  color: #000;
+}
+
 /* Dropdown */
 .dropdown {
   position: relative;
