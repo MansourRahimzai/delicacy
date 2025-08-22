@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>View Cart - Delicacy</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>Checkout - Delicacy</title>
+    <link rel="icon" href="images/weblogo.png" />
 
     <link
       rel="stylesheet"
@@ -12,9 +16,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
     <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="css/cart.css" />
+    <link rel="stylesheet" href="css/checkout.css" />
   </head>
   <body>
     <header class="navbar">
@@ -42,13 +45,9 @@
         <!-- My Cart Dropdown -->
         <div class="dropdown">
           <div class="dropdown-toggle my-cart">
-            <i class="fas fa-shopping-cart"></i> My Cart
-            <i class="fas fa-chevron-down rotate-icon"></i>
+            <i class="fas fa-shopping-cart"></i
+            ><a href="cart.html" class="mycart-link">My Cart</a>
           </div>
-          <ul class="dropdown-menu">
-            <li><a href="cart.html">View Cart</a></li>
-            <li><a href="checkout.html">Checkout</a></li>
-          </ul>
         </div>
 
         <!-- Profile Dropdown -->
@@ -60,9 +59,11 @@
           </div>
           <ul class="dropdown-menu">
             <li><a href="settings.html">Settings</a></li>
+
             <li><a href="userorders.html">My Orders</a></li>
             <li><a href="signup.html">Sign Up</a></li>
             <li><a href="signin.html">Login</a></li>
+            <li><a href="#">Logout</a></li>
           </ul>
         </div>
       </div>
@@ -76,155 +77,123 @@
         </div>
       </div>
     </header>
-    <div class="cartTopBar">Your Shopping Cart</div>
 
-    <div class="cartContainer">
-      <!-- Cart List -->
-      <div class="cartBox">
-        <div class="cartHeadBox">
-          <span>Items</span>
-          <span id="cart-count">2 Products</span>
+    <!-- Mobile Slide Menu -->
+    <div class="mobile-slide-menu" id="mobileMenu">
+      <div class="search-container">
+        <input type="text" placeholder="Search Products" />
+        <i class="fas fa-search icon"></i>
+      </div>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="checkoutContainer">
+      <!-- Form -->
+      <div class="checkoutFormBox">
+        <div class="sectionTitle">Billing Details</div>
+        <div class="formGroup">
+          <input type="text" id="fname" placeholder="Enter your name" />
         </div>
-        <div class="cartItemsBox" id="cart-items">
-          <div class="cartRowBox" data-price="12">
-            <div class="itemThumbBox">
-              <img src="https://via.placeholder.com/90x70" alt="Food" />
-            </div>
-            <div>
-              <div class="itemTitleBox">Grilled Chicken</div>
-              <div class="itemMetaBox">Delicious & Spicy</div>
-            </div>
-            <div class="itemPriceBox">
-              $<span class="line-price">12.00</span>
-            </div>
-            <div class="itemQtyBox">
-              <button class="qty-minus">-</button>
-              <input type="text" value="1" class="qty-input" />
-              <button class="qty-plus">+</button>
-            </div>
-            <div class="removeBtnBox">&times;</div>
-          </div>
-
-          <div class="cartRowBox" data-price="8">
-            <div class="itemThumbBox">
-              <img src="https://via.placeholder.com/90x70" alt="Food" />
-            </div>
-            <div>
-              <div class="itemTitleBox">Fresh Salad</div>
-              <div class="itemMetaBox">Organic Veggies</div>
-            </div>
-            <div class="itemPriceBox">
-              $<span class="line-price">16.00</span>
-            </div>
-            <div class="itemQtyBox">
-              <button class="qty-minus">-</button>
-              <input type="text" value="2" class="qty-input" />
-              <button class="qty-plus">+</button>
-            </div>
-            <div class="removeBtnBox">&times;</div>
-          </div>
+        <div class="formGroup">
+          <input type="email" id="email" placeholder="Enter your email" />
+        </div>
+        <div class="formGroup">
+          <input type="tel" id="phone" placeholder="+44 123 4567" />
+        </div>
+        <div class="formGroup">
+          <input type="text" id="address" placeholder="123 Main Street" />
+        </div>
+        <div class="formGroup">
+          <input type="text" id="city" placeholder="London" />
+        </div>
+        <div class="formGroup">
+          <select id="country">
+            <option>United Kingdom</option>
+            <option>United States</option>
+            <option>Canada</option>
+            <option>Germany</option>
+            <option>France</option>
+          </select>
         </div>
       </div>
 
-      <!-- Summary -->
+      <!-- Order Summary -->
       <div class="summaryBox">
-        <div class="summaryTitleBox">Order Summary</div>
-        <div class="summaryRowBox">
-          <span>Subtotal</span><span id="subtotal">$28.00</span>
+        <div class="summaryTitle">Order Summary</div>
+        <div class="summaryRow">
+          <span>Grilled Chicken × 1</span><span>$12.00</span>
         </div>
-        <div class="summaryRowBox">
-          <span>Delivery</span><span id="delivery">$3.00</span>
+        <div class="summaryRow">
+          <span>Fresh Salad × 2</span><span>$16.00</span>
         </div>
-        <div class="summaryRowBox">
-          <span>Tax</span><span id="tax">$1.50</span>
-        </div>
-        <div class="summaryTotalBox">
-          <span>Total</span><span id="total">$32.50</span>
+        <div class="summaryRow"><span>Delivery</span><span>$3.00</span></div>
+        <div class="summaryRow"><span>Tax</span><span>$1.50</span></div>
+        <div class="summaryTotal"><span>Total</span><span>$32.50</span></div>
+
+        <div class="paymentBox">
+          <div class="sectionTitle">Payment Method</div>
+          <label
+            ><input type="radio" name="payment" value="card" /> Credit/Debit
+            Card</label
+          >
+          <div class="cardFields" id="cardFields">
+            <input
+              class="payment-inputs"
+              type="text"
+              placeholder="Card Number"
+            />
+            <input class="payment-inputs" type="text" placeholder="MM/YY" />
+            <input class="payment-inputs" type="text" placeholder="CVV" />
+          </div>
+          <label
+            ><input type="radio" name="payment" value="paypal" /> PayPal</label
+          >
         </div>
 
-        <div class="couponBox">
-          <input type="text" id="coupon-input" placeholder="Promo code" />
-          <button id="apply-coupon">Apply</button>
-        </div>
-        <div class="couponMsg" id="coupon-msg"></div>
+        <button class="placeOrderBtn" id="placeOrderBtn">Place Order</button>
+      </div>
+    </div>
 
-        <button class="checkoutBtnBox">Proceed to Checkout</button>
+    <!-- Success Popup -->
+    <div class="popupOverlay" id="popupOverlay">
+      <div class="popupBox">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/1041/1041916.png"
+          alt="Success"
+        />
+        <h2>Order Successful 🎉</h2>
+        <p>Your food is on the way. Thanks for ordering from Delicacy!</p>
+        <button class="closeBtn" onclick="closePopup()">Close</button>
       </div>
     </div>
 
     <script>
-      let discount = 0; // global discount value
-
-      function updateCart() {
-        let rows = document.querySelectorAll(".cartRowBox");
-        let subtotal = 0;
-        rows.forEach((row) => {
-          let unitPrice = parseFloat(row.dataset.price);
-          let qty = parseInt(row.querySelector(".qty-input").value);
-          if (qty < 1) qty = 1;
-          let lineTotal = unitPrice * qty;
-          row.querySelector(".line-price").textContent = lineTotal.toFixed(2);
-          subtotal += lineTotal;
+      // Show card fields if card selected
+      document.querySelectorAll("input[name='payment']").forEach((radio) => {
+        radio.addEventListener("change", () => {
+          const cardBox = document.getElementById("cardFields");
+          if (document.querySelector("input[value='card']").checked) {
+            cardBox.style.display = "block";
+          } else {
+            cardBox.style.display = "none";
+          }
         });
+      });
 
-        // Apply discount
-        let discountedSubtotal = subtotal - subtotal * discount;
-        document.getElementById("subtotal").textContent =
-          "$" + discountedSubtotal.toFixed(2);
-
-        let delivery = 3.0;
-        let tax = discountedSubtotal * 0.05;
-        document.getElementById("tax").textContent = "$" + tax.toFixed(2);
-        let total = discountedSubtotal + delivery + tax;
-        document.getElementById("total").textContent = "$" + total.toFixed(2);
-
-        document.getElementById("cart-count").textContent =
-          rows.length + " Products";
+      // Success Popup
+      const popup = document.getElementById("popupOverlay");
+      document.getElementById("placeOrderBtn").addEventListener("click", () => {
+        popup.classList.add("active");
+      });
+      function closePopup() {
+        popup.classList.remove("active");
       }
-
-      // quantity buttons
-      document.querySelectorAll(".qty-plus").forEach((btn) => {
-        btn.addEventListener("click", () => {
-          let input = btn.parentElement.querySelector(".qty-input");
-          input.value = parseInt(input.value) + 1;
-          updateCart();
-        });
-      });
-      document.querySelectorAll(".qty-minus").forEach((btn) => {
-        btn.addEventListener("click", () => {
-          let input = btn.parentElement.querySelector(".qty-input");
-          input.value = Math.max(1, parseInt(input.value) - 1);
-          updateCart();
-        });
-      });
-      // remove item
-      document.querySelectorAll(".removeBtnBox").forEach((btn) => {
-        btn.addEventListener("click", () => {
-          btn.parentElement.remove();
-          updateCart();
-        });
-      });
-
-      // apply coupon
-      document.getElementById("apply-coupon").addEventListener("click", () => {
-        let code = document
-          .getElementById("coupon-input")
-          .value.trim()
-          .toUpperCase();
-        let msg = document.getElementById("coupon-msg");
-        if (code === "OFF10") {
-          discount = 0.1;
-          msg.textContent = "Coupon applied: 10% OFF!";
-          msg.className = "couponMsg success";
-        } else {
-          discount = 0;
-          msg.textContent = "Invalid coupon code!";
-          msg.className = "couponMsg error";
-        }
-        updateCart();
-      });
-
-      updateCart();
     </script>
 
     <!-- scirpt cdn links -->

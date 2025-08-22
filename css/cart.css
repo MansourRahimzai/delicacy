@@ -22,7 +22,7 @@ body {
 /* Container */
 .cartContainer {
   max-width: 1100px;
-  margin: 7rem auto;
+  margin: 6rem auto;
   padding: 0 16px;
   display: grid;
   grid-template-columns: 2fr 1fr;
