@@ -412,3 +412,11 @@ input[type="file"]::file-selector-button:active {
 .login-btn:hover {
   background: #e56f05;
 }
+
+/* Responsive */
+
+@media (max-width: 378px) {
+  .card h2 {
+    font-size: 1.2rem;
+  }
+}
