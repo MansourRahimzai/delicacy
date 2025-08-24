@@ -24,7 +24,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow-y: hidden;
 }
 
 .card {
@@ -417,6 +416,12 @@ input[type="file"]::file-selector-button:active {
 
 @media (max-width: 378px) {
   .card h2 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 313px) {
+  .card h2 {
+    font-size: 0.9rem;
   }
 }

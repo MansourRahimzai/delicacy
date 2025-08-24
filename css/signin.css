@@ -331,3 +331,9 @@ body {
     font-size: 1.1rem;
   }
 }
+
+@media (max-width: 313px) {
+  .card h2 {
+    font-size: 0.9rem;
+  }
+}
