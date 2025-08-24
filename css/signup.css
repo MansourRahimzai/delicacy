@@ -420,7 +420,7 @@ input[type="file"]::file-selector-button:active {
   }
 }
 
-@media (max-width: 327px) {
+@media (max-width: 328px) {
   .card h2 {
     font-size: 0.9rem;
   }
