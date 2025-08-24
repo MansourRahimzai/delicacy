@@ -323,3 +323,11 @@ body {
 .reset-extra a:hover {
   text-decoration: underline;
 }
+
+/* Responsive */
+
+@media (max-width: 378px) {
+  .card h2 {
+    font-size: 1.2rem;
+  }
+}
