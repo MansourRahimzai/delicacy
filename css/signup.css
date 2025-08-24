@@ -417,6 +417,6 @@ input[type="file"]::file-selector-button:active {
 
 @media (max-width: 378px) {
   .card h2 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
