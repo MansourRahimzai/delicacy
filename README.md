@@ -1,13 +1,13 @@
 # 🛒 Delicacy – Online Grocery Store
 
-Welcome to *Delicacy*, a modern and stylish online grocery shopping website where users can browse and filter fresh products like vegetables, meat, and drinks with smooth animations and responsive design.
+Welcome to _Delicacy_, a modern and stylish online grocery shopping website where users can browse and filter fresh products like vegetables, meat, and drinks with smooth animations and responsive design.
 
 ## 🌟 Features
 
 - 🛍 Product Filtering by Category (Vegetables, Meat, Drinks)
 - 🎠 Custom Carousel for Featured Products
 - 🔖 Discount Badges & Price Tags
-- 💖 Add to Cart & Add to Favorites Icons
+- 💖 Add to Cart option
 - 🕒 Special Offers with Countdown Timer
 - ⭐ Top-Rated Product Section
 - 📱 Fully Responsive Layout
@@ -27,6 +27,7 @@ Welcome to *Delicacy*, a modern and stylish online grocery shopping website wher
 - JavaScript (Vanilla)
 - AOS (Animate on Scroll)
 - Boxicons
+- Fontawesome
 
 ## 📸 Screenshots
 
@@ -37,3 +38,8 @@ Welcome to *Delicacy*, a modern and stylish online grocery shopping website wher
 1. Clone the repository:
    ```bash
    git clone https://github.com/MansourRahimzai/delicacy.git
+   ```
+
+## Contact With developer
+
+## mansourrahimi008@gmail.com
