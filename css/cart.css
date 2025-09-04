@@ -137,6 +137,12 @@ body {
   margin-top: 12px;
   color: var(--text);
 }
+
+.discount-text {
+  font-size: 14px;
+  margin-top: 7px;
+}
+
 .couponBox {
   margin: 16px 0;
   display: flex;
