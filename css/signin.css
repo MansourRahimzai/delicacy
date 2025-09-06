@@ -327,19 +327,19 @@ body {
 /* Responsive */
 
 @media (max-width: 378px) {
-  .card h2 {
+  .card-1 h2 {
     font-size: 1.1rem;
   }
 }
 
 @media (max-width: 328px) {
-  .card h2 {
+  .card-1 h2 {
     font-size: 0.9rem;
   }
 }
 
 @media (max-width: 280px) {
-  .card h2 {
+  .card-1 h2 {
     font-size: 0.7rem;
   }
 }
