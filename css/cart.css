@@ -227,3 +227,22 @@ body {
     margin-top: 6px;
   }
 }
+
+@media (max-width: 454px) {
+  .cartRowBox {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .itemPriceBox {
+    padding-right: 6px;
+  }
+}
+
+@media (max-width: 390px) {
+  .cartRowBox {
+    display: flex;
+    flex-direction: column;
+  }
+}
